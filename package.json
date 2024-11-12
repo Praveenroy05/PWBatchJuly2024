@@ -1,0 +1,26 @@
+{
+  "name": "playwrightaug2024",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "fulltest": "npx playwright test",
+    "smoke": "npx playwright test --grep @smoke",
+    "regression": "npx playwright test --grep @regression",
+    "cucumberParallelTest": "npx cucumber-js --exit --parallel 10",
+    "cucumberreport": "npx cucumber-js --exit --parallel 10 --format html:cucumber-report.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.0.1",
+    "@playwright/test": "^1.47.0",
+    "@types/node": "^22.1.0",
+    "allure-commandline": "^2.30.0",
+    "allure-playwright": "^3.0.0-beta.12"
+  },
+  "dependencies": {
+    "playwrightaug2024": "file:"
+  }
+}
